@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import { SIGN_IN } from "@/constants/routes";
 import prismaDb from "@/lib/prismaDb";
 import { auth } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
@@ -13,8 +14,7 @@ export default async function DashboardLayout({
   const { userId } = auth();
 
   if (!userId) {
-    //TODO: store route names in constants
-    redirect("/sign-in");
+    redirect(SIGN_IN);
   }
 
   const store = await prismaDb.store.findFirst({
