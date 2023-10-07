@@ -1,7 +1,8 @@
+import useMounted from "@/hooks/use-mounted";
 import { ImagePlus, Trash } from "lucide-react";
 import { CldUploadWidget } from "next-cloudinary";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Button } from "./button";
 
 interface ImageUploadProps {
@@ -17,12 +18,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
   onRemove,
   value,
 }) => {
-  const [isMounted, setIsMounted] = useState<boolean>(false);
-
-  //TODO: check if its actually required
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+  const { isMounted } = useMounted();
 
   if (!isMounted) {
     return null;
