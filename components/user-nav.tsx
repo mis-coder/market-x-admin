@@ -41,7 +41,7 @@ export function UserNav() {
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           {routes.map((route) => (
-            <DropdownMenuItem>
+            <DropdownMenuItem key={route.href}>
               <Link
                 key={route.href}
                 href={route.href}
