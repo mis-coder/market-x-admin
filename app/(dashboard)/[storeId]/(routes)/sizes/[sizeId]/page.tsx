@@ -1,4 +1,4 @@
-import prismaDb from "@/lib/prismaDb";
+import prismaDb from "../../../../../../lib/prismaDb";
 import SizeForm from "./components/size-form";
 
 const SizePage = async ({ params }: { params: { sizeId: string } }) => {

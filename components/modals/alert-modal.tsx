@@ -1,6 +1,6 @@
 "use client";
 
-import useMounted from "@/hooks/use-mounted";
+import useMounted from "../../hooks/use-mounted";
 import React from "react";
 import { Button } from "../ui/button";
 import { Modal } from "../ui/modal";

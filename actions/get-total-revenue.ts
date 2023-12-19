@@ -1,4 +1,4 @@
-import prismaDb from "@/lib/prismaDb";
+import prismaDb from "../lib/prismaDb";
 
 export const getTotalRevenue = async (storeId: string) => {
   const paidOrders = await prismaDb.order.findMany({

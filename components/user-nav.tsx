@@ -1,8 +1,8 @@
 "use client";
 import { LogOut } from "lucide-react";
 
-import useRoutes from "@/hooks/use-routes";
-import { cn } from "@/lib/utils";
+import useRoutes from "../hooks/use-routes";
+import { cn } from "../lib/utils";
 import { SignOutButton, UserButton, useUser } from "@clerk/nextjs";
 import Link from "next/link";
 import { Avatar } from "./ui/avatar";

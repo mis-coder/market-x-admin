@@ -1,7 +1,7 @@
 import { format } from "date-fns";
 
-import prismaDb from "@/lib/prismaDb";
-import { formatter } from "@/lib/utils";
+import prismaDb from "../../../../../lib/prismaDb";
+import { formatter } from "../../../../../lib/utils";
 
 import { OrderClient } from "./components/client";
 import { OrderColumn } from "./components/columns";

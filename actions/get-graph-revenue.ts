@@ -1,4 +1,4 @@
-import prismaDb from "@/lib/prismaDb";
+import prismaDb from "../lib/prismaDb";
 
 interface GraphData {
   name: string;

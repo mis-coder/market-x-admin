@@ -1,5 +1,5 @@
-import prismaDb from "@/lib/prismaDb";
-import { formatter } from "@/lib/utils";
+import prismaDb from "../../../../../lib/prismaDb";
+import { formatter } from "../../../../../lib/utils";
 import { format } from "date-fns";
 import ProductsClient from "./components/client";
 import { ProductColumn } from "./components/columns";

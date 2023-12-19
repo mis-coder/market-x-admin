@@ -1,4 +1,4 @@
-import prismaDb from "@/lib/prismaDb";
+import prismaDb from "../lib/prismaDb";
 import { UserButton, auth } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 import MainNav from "./main-nav";

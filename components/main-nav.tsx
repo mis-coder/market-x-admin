@@ -1,7 +1,7 @@
 "use client";
 
-import useRoutes from "@/hooks/use-routes";
-import { cn } from "@/lib/utils";
+import useRoutes from "../hooks/use-routes";
+import { cn } from "../lib/utils";
 import Link from "next/link";
 import React from "react";
 

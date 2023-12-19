@@ -1,4 +1,4 @@
-import prismaDb from "@/lib/prismaDb";
+import prismaDb from "../../../../../lib/prismaDb";
 import { format } from "date-fns";
 import ColorClient from "./components/client";
 import { ColorColumn } from "./components/columns";

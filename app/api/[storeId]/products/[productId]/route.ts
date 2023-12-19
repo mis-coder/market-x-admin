@@ -1,7 +1,7 @@
 import { auth } from "@clerk/nextjs";
 import { NextResponse } from "next/server";
 
-import prismaDb from "@/lib/prismaDb";
+import prismaDb from "../../../../../lib/prismaDb";
 
 export async function GET(
   req: Request,

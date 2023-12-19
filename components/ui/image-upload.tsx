@@ -1,4 +1,4 @@
-import useMounted from "@/hooks/use-mounted";
+import useMounted from "../../hooks/use-mounted";
 import { ImagePlus, Trash } from "lucide-react";
 import { CldUploadWidget } from "next-cloudinary";
 import Image from "next/image";

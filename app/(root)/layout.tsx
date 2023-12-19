@@ -1,8 +1,8 @@
 import { auth } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 
-import { SIGN_IN } from "@/constants/routes";
-import prismaDb from "@/lib/prismaDb";
+import { SIGN_IN } from "../../constants/routes";
+import prismaDb from "../../lib/prismaDb";
 
 export default async function RootLayout({
   children,

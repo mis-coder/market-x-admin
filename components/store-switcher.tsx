@@ -1,6 +1,6 @@
 "use client";
-import { useStoreModal } from "@/hooks/use-store-modal";
-import { cn } from "@/lib/utils";
+import { useStoreModal } from "../hooks/use-store-modal";
+import { cn } from "../lib/utils";
 import { Check, ChevronsUpDown, PlusCircle, Store } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import { useState } from "react";

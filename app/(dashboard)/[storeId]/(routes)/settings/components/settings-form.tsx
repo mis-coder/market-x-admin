@@ -1,6 +1,6 @@
 "use client";
 
-import useOrigin from "@/hooks/use-origin";
+import useOrigin from "../../../../../../hooks/use-origin";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Store } from "@prisma/client";
 import axios from "axios";

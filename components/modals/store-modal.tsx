@@ -4,7 +4,7 @@ import * as z from "zod";
 
 import axios from "axios";
 
-import { useStoreModal } from "@/hooks/use-store-modal";
+import { useStoreModal } from "../../hooks/use-store-modal";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 import { Button } from "../ui/button";
