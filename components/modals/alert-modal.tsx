@@ -1,9 +1,9 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Modal } from "@/components/ui/modal";
 import useMounted from "@/hooks/use-mounted";
 import React from "react";
+import { Button } from "../ui/button";
+import { Modal } from "../ui/modal";
 
 interface AlertModalProps {
   isOpen: boolean;

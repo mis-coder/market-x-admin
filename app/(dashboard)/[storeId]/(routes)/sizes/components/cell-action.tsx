@@ -1,18 +1,18 @@
 import axios from "axios";
 
-import AlertModal from "@/components/modals/alert-modal";
-import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-} from "@/components/ui/dropdown-menu";
 import { DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu";
 import { Copy, Edit, MoreHorizontal, Trash } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
+import AlertModal from "../../../../../../components/modals/alert-modal";
+import { Button } from "../../../../../../components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+} from "../../../../../../components/ui/dropdown-menu";
 import { SizeColumn } from "./columns";
 
 interface CellActionProps {

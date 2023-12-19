@@ -1,8 +1,12 @@
 "use client";
 import { LogOut } from "lucide-react";
 
-import { Avatar } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import useRoutes from "@/hooks/use-routes";
+import { cn } from "@/lib/utils";
+import { SignOutButton, UserButton, useUser } from "@clerk/nextjs";
+import Link from "next/link";
+import { Avatar } from "./ui/avatar";
+import { Button } from "./ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,11 +15,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import useRoutes from "@/hooks/use-routes";
-import { cn } from "@/lib/utils";
-import { SignOutButton, UserButton, useUser } from "@clerk/nextjs";
-import Link from "next/link";
+} from "./ui/dropdown-menu";
 
 export function UserNav() {
   const { user } = useUser();

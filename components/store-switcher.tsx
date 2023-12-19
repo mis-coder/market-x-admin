@@ -1,5 +1,10 @@
 "use client";
-import { Button } from "@/components/ui/button";
+import { useStoreModal } from "@/hooks/use-store-modal";
+import { cn } from "@/lib/utils";
+import { Check, ChevronsUpDown, PlusCircle, Store } from "lucide-react";
+import { useParams, useRouter } from "next/navigation";
+import { useState } from "react";
+import { Button } from "./ui/button";
 import {
   Command,
   CommandEmpty,
@@ -8,17 +13,8 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-} from "@/components/ui/command";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import { useStoreModal } from "@/hooks/use-store-modal";
-import { cn } from "@/lib/utils";
-import { Check, ChevronsUpDown, PlusCircle, Store } from "lucide-react";
-import { useParams, useRouter } from "next/navigation";
-import { useState } from "react";
+} from "./ui/command";
+import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 
 type PopoverTriggerProps = React.ComponentPropsWithoutRef<
   typeof PopoverTrigger

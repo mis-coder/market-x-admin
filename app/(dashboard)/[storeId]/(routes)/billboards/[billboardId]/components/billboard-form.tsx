@@ -1,19 +1,5 @@
 "use client";
 
-import AlertModal from "@/components/modals/alert-modal";
-import { Button } from "@/components/ui/button";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import Heading from "@/components/ui/heading";
-import ImageUpload from "@/components/ui/image-upload";
-import { Input } from "@/components/ui/input";
-import { Separator } from "@/components/ui/separator";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Billboard } from "@prisma/client";
 import axios from "axios";
@@ -23,6 +9,20 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
 import * as z from "zod";
+import AlertModal from "../../../../../../../components/modals/alert-modal";
+import { Button } from "../../../../../../../components/ui/button";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "../../../../../../../components/ui/form";
+import Heading from "../../../../../../../components/ui/heading";
+import ImageUpload from "../../../../../../../components/ui/image-upload";
+import { Input } from "../../../../../../../components/ui/input";
+import { Separator } from "../../../../../../../components/ui/separator";
 
 const formSchema = z.object({
   label: z.string().min(1),
