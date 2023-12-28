@@ -70,8 +70,8 @@ export async function POST(
     phone_number_collection: {
       enabled: true,
     },
-    success_url: `https://market-x-store.vercel.app/cart?success=1`,
-    cancel_url: `https://market-x-store.vercel.app/cart?canceled=1`,
+    success_url: `${process.env.NEXT_APP_FRONTEND_STORE_URL}/cart?success=1`,
+    cancel_url: `${process.env.NEXT_APP_FRONTEND_STORE_URL}/cart?canceled=1`,
     metadata: {
       orderId: order.id,
     },
